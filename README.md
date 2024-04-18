@@ -2,7 +2,6 @@
 
 Une plateforme épurée pour suivre les changements dans le marché des cryptomonnaies.
 
-![Crypto Tracker Logo](capp/res/frontPage.png)
 
 ## Contexte du Projet
 
