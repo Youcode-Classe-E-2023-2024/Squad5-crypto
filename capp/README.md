@@ -19,21 +19,18 @@ Une compagnie de crypto souhaite suivre les changements de cryptomonnaies sur le
 ### Marchés (Markets)
 
 - Index des marchés disponibles.
-- Tri ascendant/descendant par rang et prix en USD.
-- Pagination par 10.
+- Tri rang et prix en USD.
 
 ### Actifs (Assets)
 
 - Index des actifs disponibles.
 - Tri ascendant/descendant par nom et prix.
-- Pagination par 10.
 - Page détaillée de chaque actif avec un graphique montrant les variations de prix par ordre chronologique.
 
 ### Échanges (Exchanges)
 
 - Index des échanges disponibles.
 - Tri ascendant/descendant par volume en USD.
-- Pagination par 10.
 - Page détaillée de chaque échange.
 
 ### Bonus
