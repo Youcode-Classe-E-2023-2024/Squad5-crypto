@@ -51,10 +51,14 @@ Consultez la documentation API dans les ressources pour obtenir des détails sur
 ***Mohammed Loussal***
 
 ## Developers 👨‍💻
+
 ***Mohammed Bachiri***
+
 ***Hafsa ELMoatassim billah***
+
 ***Maryam JAMMAR***
-**kholod sanak***
+
+***Kholod Sanak***
 
 ## Licence ©️
 
