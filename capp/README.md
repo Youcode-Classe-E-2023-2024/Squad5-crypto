@@ -44,8 +44,8 @@ Consultez la documentation API dans les ressources pour obtenir des détails sur
 
 ## Développement
 
-- Clonez ce dépôt :
-    [git clone] (https://github.com/Youcode-Classe-E-2023-2024/Squad5-crypto.git)
+- git clone :
+     (https://github.com/Youcode-Classe-E-2023-2024/Squad5-crypto.git)
 ## Auteur
 
 ***Mohammed Loussal***
