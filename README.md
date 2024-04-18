@@ -5,7 +5,7 @@ Une plateforme épurée pour suivre les changements dans le marché des cryptomo
 
 ## Contexte du Projet
 
-Une compagnie de crypto souhaite suivre les changements de cryptomonnaies sur le marché via une plateforme épurée, offrant un accès facile à l'information. Pour ce faire, vous devrez vous référer à la documentation API disponible dans les ressources.
+crypto Char une plateforme de track les changements de cryptomonnaies sur le marché mondiale avec real time data.
 
 ## Prérequis :cop:
 
