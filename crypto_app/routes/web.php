@@ -14,7 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/asset', function () {
+    return view('Assets.Show');
+});
+
 Route::get('/echanges',[EchangeController::class,'index']);
 
 Route::get('/exchanges/{id}', [EchangeController::class, 'show'])->name('exchanges.detail');
-
