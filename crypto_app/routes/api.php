@@ -20,5 +20,5 @@ use Illuminate\Support\Facades\Route;
 //});
 Route::get('/exchanges', [EchangeController::class, 'getExchanges']);
 //detail page
-Route::get('/exchanges/{id}', [EchangeController::class, 'show']);
+Route::get('/exchanges/{id}', [EchangeController::class, 'detail']);
 
