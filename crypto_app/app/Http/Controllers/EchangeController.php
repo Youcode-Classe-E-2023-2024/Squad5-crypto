@@ -35,8 +35,16 @@ class EchangeController extends Controller
         }
     }
 
+    public function index(){
+        return view('exchanges');
 
-    public function show($id)
+    }
+
+
+
+
+
+    public function detail($id)
     {
         $response = Http::get("https://api.coincap.io/v2/exchanges/{$id}");
 
@@ -48,4 +56,10 @@ class EchangeController extends Controller
             return response()->json(['error' => 'Failed to retrieve exchange details.'], 500);
         }
     }
+
+    public function show($id)
+    {
+        return view('detailPages.exchanges', compact('id'));
+    }
+
 }
