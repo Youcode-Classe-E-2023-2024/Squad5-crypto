@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EchangeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/echanges',[EchangeController::class,'index']);
+
+Route::get('/exchanges/{id}', [EchangeController::class, 'show'])->name('exchanges.detail');
+
