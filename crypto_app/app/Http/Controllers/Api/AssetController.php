@@ -9,18 +9,6 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 class AssetController extends Controller
 {
-//    public function index()
-//    {
-//        $response = Http::withoutVerifying()->get('https://api.coincap.io/v2/assets');
-//
-//        if ($response->ok()) {
-//            return $response->json();
-//        } else {
-//            return response()->json(['message' => 'Une erreur est survenue lors de la récupération des actifs.'], $response->status());
-//        }
-//    }
-
-
     public function assets(Request $request)
     {
         $response = Http::withoutVerifying()->get('https://api.coincap.io/v2/assets');
@@ -37,10 +25,11 @@ class AssetController extends Controller
                 $assets = $assets->sortBy('priceUsd', SORT_REGULAR, $sortOrder === 'asc');
             }
 
-            return $assets->values()->all();
-        } else {
-            return response()->json(['message' => 'Une erreur est survenue lors de la récupération des actifs.'], $response->status());
-        }
+                return $assets->values()->all();
+            } else {
+                return response()->json(['message' => 'Une erreur est survenue lors de la récupération des actifs.'], $response->status());
+            }
+      }
     }
 
     public function index()
