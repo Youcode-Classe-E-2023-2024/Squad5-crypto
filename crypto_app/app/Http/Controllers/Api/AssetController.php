@@ -13,10 +13,12 @@ class AssetController extends Controller
     {
         $response = Http::withoutVerifying()->get('https://api.coincap.io/v2/assets');
 
-        if ($response->ok()) {
-            return $response->json();
+        if ($response->successful()) {
+            $assets = $response->json()['data'];
+
+            return response()->json($assets);
         } else {
-            return response()->json(['message' => 'Une erreur est survenue lors de la récupération des actifs.'], $response->status());
+            return response()->json(['error' => 'Failed to retrieve exchange data.'], 500);
         }
     }
 
