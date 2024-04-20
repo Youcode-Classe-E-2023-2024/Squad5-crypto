@@ -26,6 +26,22 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+
+
 });
+
+Route::get('/markets', function() {
+    return view('user.markets');
+})->name('markets');
+
+Route::get('/assets', function() {
+    return view('user.assets');
+})->name('assets');
+
+Route::get('/exchanges', function() {
+    return view('user.exchanges');
+})->name('exchanges');
+
 
 require __DIR__.'/auth.php';
