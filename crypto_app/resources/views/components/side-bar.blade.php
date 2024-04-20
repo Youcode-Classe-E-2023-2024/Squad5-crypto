@@ -66,10 +66,13 @@
                 </li>
                 <li>
                     @if(Auth::check())
-                        <a href="{{route('logout')}}" }> Logout </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf <!-- Include CSRF token for security -->
+                        </form>
+                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 
                     @else()
-                        <a href="{{route('login')}}" }> Login </a>
+                        <a href="{{ route('login') }}" }> Login </a>
                     @endif
                 </li>
             </ul>
