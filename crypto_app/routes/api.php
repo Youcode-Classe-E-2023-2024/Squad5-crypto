@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\AssetController;
 use App\Http\Controllers\EchangeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MarketController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +19,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::namespace('Api')->group(function () {
     Route::get('/assets', [AssetController::class, 'index']);
+    Route::get('/exchanges', [EchangeController::class, 'getExchanges']);
+    //detail page
+    Route::get('/exchanges/{id}', [EchangeController::class, 'detail']);
+
+    Route::get('/markets', [MarketController::class, 'index']);
 });
 
-Route::get('/exchanges', [EchangeController::class, 'getExchanges']);
-//detail page
-Route::get('/exchanges/{id}', [EchangeController::class, 'detail']);
+
+
 
