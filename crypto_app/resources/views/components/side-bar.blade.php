@@ -61,7 +61,7 @@
                 <li class="{{ request()->is('assets') ? 'active' : '' }}">
                     <a href="/assets"> Assets </a>
                 </li>
-                <li class="{{ request()->is('exchanges') ? 'active' : '' }}">
+                <li class="{{ request()->is('bitcoin') ? 'active' : '' }}">
                     <a href="/exchanges"> Exchanges </a>
                 </li>
                 <li>

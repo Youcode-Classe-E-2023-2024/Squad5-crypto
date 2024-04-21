@@ -28,20 +28,25 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
 
+    Route::get('/markets', function() {
+        return view('user.markets');
+    })->name('markets');
 
+    Route::get('/assets', function() {
+        return view('user.assets');
+    })->name('assets');
+
+    Route::get('/exchanges', function() {
+        return view('user.exchanges');
+    })->name('exchanges');
+
+    Route::get('/asset/{asset}', function ($asset) {
+        $asset = strtolower($asset);
+        return view('Assets.Show', compact('asset'));
+    });
 });
 
-Route::get('/markets', function() {
-    return view('user.markets');
-})->name('markets');
 
-Route::get('/assets', function() {
-    return view('user.assets');
-})->name('assets');
-
-Route::get('/exchanges', function() {
-    return view('user.exchanges');
-})->name('exchanges');
 
 
 require __DIR__.'/auth.php';

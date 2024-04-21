@@ -79,7 +79,15 @@ https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
                     $('#myTable').DataTable({
                         data: response.data,
                         columns: [
-                            { data: 'name' },
+                            {
+                                data: 'name',
+                                render: function(data, type, row) {
+                                    if (type === 'display') {
+                                        return '<a href="asset/' + data + '">' + data + '</a>';
+                                    }
+                                    return data;
+                                }
+                            },
                             { data: 'symbol' },
                             { data: 'rank' },
                             { data: 'supply' },
