@@ -10,7 +10,7 @@
 
                     <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                         <div class="widget-content widget-content-area br-8" style="overflow-x: auto;">
-                            <table id="myTable" class="table table-striped dt-table-hover" style="width:100%">
+                            <table id="myTable" class="table table-striped dt-table-hover text-center" style="width:100%">
                                 <thead id="">
                                 <tr>
                                     <th>name</th>
