@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<h1 class="text-xl text-center text-red-500">{{ $asset }}</h1>
+<h1 class="text-xl text-center text-red-500 capitalize">{{ $asset }}</h1>
 <canvas id="myChart"></canvas>
 <input type="hidden" id="currentAsset" value="{{ $asset }}">
 

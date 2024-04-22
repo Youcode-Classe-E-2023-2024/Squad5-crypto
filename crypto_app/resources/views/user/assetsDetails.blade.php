@@ -1,4 +1,4 @@
-<x-layouts.user-layout title="markets" >
+<x-layouts.user-layout title="assets" >
     <div id="content" class="main-content">
         <div class="layout-px-spacing">
 
@@ -13,21 +13,25 @@
                             <table id="myTable" class="table table-striped dt-table-hover text-center" style="width:100%">
                                 <thead>
                                 <tr>
+                                    <th>Asset ID</th>
                                     <th>Name</th>
-                                    <th>Base Symbol</th>
-                                    <th>Quote Symbol</th>
-                                    <th>Price Quote</th>
                                     <th>Rank</th>
-                                    <th>Price Quote</th>
-                                    <th>Trades Count</th>
-                                    <th>Volume Usd</th>
-                                    <th>Price Usd</th>
-                                    <th>Percent Exchange Volume</th>
-                                    <th>Updated</th>
+                                    <th>Change Percent</th>
+                                    <th>Volume USD</th>
+                                    <th>Price USD</th>
+                                    <th>Vwap</th>
+                                    <th>Explorer</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-
+                                <th>{{ $asset['id'] }}</th>
+                                <th>{{ $asset['name'] }}</th>
+                                <th>{{ $asset['rank'] }}</th>
+                                <th>{{ $asset['changePercent24Hr'] }}</th>
+                                <th>{{ $asset['volumeUsd24Hr'] }}</th>
+                                <th>{{ $asset['priceUsd'] }}</th>
+                                <th>{{ $asset['vwap24Hr'] }}</th>
+                                <th>{{ $asset['explorer'] }}</th>
                                 </tbody>
                                 <tfoot>
                                 <tr>
@@ -35,7 +39,9 @@
                                     <th></th>
                                     <th></th>
                                     <th></th>
-                                    <th> </th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
                                     <th></th>
                                 </tr>
                                 </tfoot>
@@ -67,38 +73,6 @@
         </div>
         <!--  END FOOTER  -->
     </div>
-
-    <script src="
-https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
-"></script>
-    <script>
-
-        $(document).ready(function() {
-            axios.get('/api/markets')
-                .then(function(response) {
-                    console.log(response)
-                    $('#myTable').DataTable({
-                        data: response.data,
-                        columns: [
-                            { data: 'baseId' },
-                            { data: 'baseSymbol' },
-                            { data: 'quoteSymbol' },
-                            { data: 'rank' },
-                            { data: 'priceQuote' },
-                            { data: 'tradesCount24Hr' },
-                            { data: 'volumeUsd24Hr' },
-                            { data: 'priceUsd' },
-                            { data: 'percentExchangeVolume' },
-                            { data: 'updated' }
-                        ]
-                    });
-                })
-                .catch(function(error) {
-                    console.error('Failed to fetch data:', error);
-                });
-        });
-
-    </script>
 
 
 </x-layouts.user-layout >

@@ -51,7 +51,7 @@ class EchangeController extends Controller
         if ($response->successful()) {
             $exchange = $response->json()['data'];
 
-            return response()->json($exchange);
+            return view('user.exchangesDetails', compact('exchange'));
         } else {
             return response()->json(['error' => 'Failed to retrieve exchange details.'], 500);
         }

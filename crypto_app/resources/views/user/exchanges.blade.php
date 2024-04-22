@@ -10,7 +10,7 @@
 
                     <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                         <div class="widget-content widget-content-area br-8" style="overflow-x: auto;">
-                            <table id="myTable" class="table table-striped dt-table-hover" style="width:100%">
+                            <table id="myTable" class="table table-striped dt-table-hover text-center" style="width:100%">
                                 <thead>
                                 <tr>
                                     <th>Exchange ID</th>
@@ -77,7 +77,7 @@ https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
                                 data: 'exchangeId',
                                 render: function(data, type, row) {
                                     if (type === 'display') {
-                                        return '<a href="/exchanges/' + data + '">' + data + '</a>';
+                                        return '<a href="api/exchanges/' + data + '">' + data + '</a>';
                                     }
                                     return data;
                                 }
