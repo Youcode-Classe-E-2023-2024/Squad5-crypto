@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a43636-6172-4be8-a2e8-a425c0db01db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/crypto_app/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/crypto_app/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Squad5-crypto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Squad5-crypto.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_app/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/crypto_app/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypto_app/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/crypto_app/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +39,6 @@
       <path value="$PROJECT_DIR$/crypto_app/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/crypto_app/vendor/doctrine/deprecations" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/guzzlehttp/guzzle" />
@@ -55,7 +58,6 @@
       <path value="$PROJECT_DIR$/crypto_app/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/symfony/uid" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/symfony/routing" />
-      <path value="$PROJECT_DIR$/crypto_app/vendor/symfony/polyfill-php81" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/guzzlehttp/uri-template" />
@@ -135,22 +137,31 @@
       <path value="$PROJECT_DIR$/crypto_app/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/crypto_app/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/crypto_app/vendor/laravel/breeze" />
+      <path value="$PROJECT_DIR$/crypto_app/vendor/symfony/polyfill-php83" />
     </include_path>
   </component>
   <component name="ProjectId" id="2fHS98E1bRv4XN70RTFLI2WpNnU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/YouCode/Desktop/Squad5-crypto/crypto_app",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\YouCode\Desktop\Squad5-crypto\crypto_app" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -162,6 +173,9 @@
       <workItem from="1713456358605" duration="910000" />
       <workItem from="1713517015206" duration="772000" />
       <workItem from="1713517897247" duration="15625000" />
+      <workItem from="1713648862548" duration="5000" />
+      <workItem from="1713649113983" duration="851000" />
+      <workItem from="1713781149689" duration="2175000" />
     </task>
     <servers />
   </component>
