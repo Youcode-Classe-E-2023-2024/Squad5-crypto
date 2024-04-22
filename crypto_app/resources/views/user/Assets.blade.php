@@ -71,7 +71,6 @@
 https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
 "></script>
     <script>
-
         $(document).ready(function() {
             axios.get('/api/assets')
                 .then(function(response) {
@@ -80,10 +79,13 @@ https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
                         data: response.data,
                         columns: [
                             {
-                                data: 'name',
+                                data: 'id',
                                 render: function(data, type, row) {
                                     if (type === 'display') {
-                                        return '<a href="asset/' + data + '">' + data + '</a>';
+                                        return '<div class="asset-link">' + data + '</div>' +
+                                            '<div class="asset-options" style="display: none">' +
+                                            '<a href="api/assets/' + data + '">  Asset Detail </a>' +
+                                            '<a href="asset/' + data + '"> Asset Live Track  </a></div>';
                                     }
                                     return data;
                                 }
@@ -98,13 +100,35 @@ https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js
                             { data: 'changePercent24Hr' }
                         ]
                     });
+
+                    // Event listeners inside the Axios then block
+                    const links = document.querySelectorAll('.asset-link');
+                    links.forEach(link => {
+                        const options = link.nextElementSibling;
+                        link.addEventListener('click', (event) => {
+                            event.stopPropagation(); // Prevents click on link from triggering the click event on the document
+                            options.style.display = 'block';
+                        });
+                        link.addEventListener('mouseover', () => {
+                            options.style.display = 'block';
+                        });
+                        options.addEventListener('mouseover', () => {
+                            options.style.display = 'block';
+                        });
+                        link.addEventListener('mouseout', () => {
+                            options.style.display = 'none';
+                        });
+                        options.addEventListener('mouseout', () => {
+                            options.style.display = 'none';
+                        });
+                    });
                 })
                 .catch(function(error) {
                     console.error('Failed to fetch data:', error);
                 });
         });
-
     </script>
+
 
 
 </x-layouts.user-layout >

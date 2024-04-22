@@ -22,6 +22,7 @@ Route::namespace('Api')->group(function () {
     Route::get('/exchanges', [EchangeController::class, 'getExchanges']);
     //detail page
     Route::get('/exchanges/{id}', [EchangeController::class, 'detail']);
+    Route::get('/assets/{id}', [AssetController::class, 'detail']);
 
     Route::get('/markets', [MarketController::class, 'index']);
 });

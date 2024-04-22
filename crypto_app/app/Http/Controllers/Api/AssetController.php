@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -57,4 +58,18 @@ class AssetController extends Controller
 //        }
 //    }
 
+
+
+    public function detail($id)
+    {
+        $response = Http::get("https://api.coincap.io/v2/assets/{$id}");
+
+        if ($response->successful()) {
+            $asset = $response->json()['data'];
+
+            return view('user.assetsDetails', compact('asset'));
+        } else {
+            return response()->json(['error' => 'Failed to retrieve assets details.'], 500);
+        }
+    }
 }
